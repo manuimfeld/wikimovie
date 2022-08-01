@@ -36,7 +36,7 @@ const Login = () => {
         return
     }
 
-    axios.post('http://challenge-react.alkemy.org', {email, password})
+    axios.post('https://challenge-react.alkemy.org', {email, password})
     .then(res => {
         swAlert('Bienvenido', 'Iniciaste sesión correctamente', 'success')
         const token = res.data.token
