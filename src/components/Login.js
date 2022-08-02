@@ -36,13 +36,19 @@ const Login = () => {
         return
     }
 
-    axios.post('https://challenge-react.alkemy.org', {email, password})
-    .then(res => {
+    /* DESACTIVADO PARA PRODUCCIÓN */
+    /* axios.post('https://challenge-react.alkemy.org', {email, password})
+      .then(res => {
         swAlert('Bienvenido', 'Iniciaste sesión correctamente', 'success')
         const token = res.data.token
         sessionStorage.setItem('token', token)
         navigate('/listado')
-    })
+      }) */
+    /* Ejemplo de token generico */
+    swAlert('Bienvenido', 'Iniciaste sesión correctamente', 'success')
+    const token = new Date().getTime()
+    sessionStorage.setItem('token', token)
+    navigate('/listado')
 
   }
 
