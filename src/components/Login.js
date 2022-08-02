@@ -58,6 +58,8 @@ const Login = () => {
     <>
     { token && <Navigate to="/listado" /> }
     <h2>Formulario de login</h2>
+    <p>Correo electrónico: <strong>challenge@alkemy.org</strong></p>
+    <p>Contraseña: <strong>react</strong></p>
     <form action="" onSubmit={submitHandler}>
         <label>
             <span>Correo electrónico:</span><br />

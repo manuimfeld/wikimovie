@@ -5,10 +5,9 @@ const Footer = () => {
     <footer>
         <nav>
             <ul>
-                <li><a href="https://instagram.com" rel='noopener noreferrer'>IG</a></li>
+                <li><a href="https://portfolio-manuimfeld.vercel.app/" rel='noopener noreferrer' target="_blank">Ir a portfolio</a></li>
             </ul>
         </nav>
-        <p>Copyright Alkemy Challenge</p>
     </footer>
   )
 }
