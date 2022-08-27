@@ -15,7 +15,17 @@ const PrincipalRouter = ({
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Login />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <Listado
+              movieList={movieList}
+              addFavorites={addFavorites}
+              favorites={favorites}
+            />
+          }
+        />
         <Route
           path="/listado"
           element={

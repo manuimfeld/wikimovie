@@ -20,7 +20,9 @@ function App() {
   }, []);
 
   const handleSubmit = (value) => {
-    ApiCall(value, setMovieResults);
+    ApiCall(value, (data) => {
+      setMovieResults(data);
+    });
     navigate(`../resultados?keyword=${value}`, { replace: true });
   };
 
